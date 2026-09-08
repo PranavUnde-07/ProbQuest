@@ -1,8 +1,3 @@
-Absolutely. We can keep the **same information and structure**, but make the README look much more like a polished GitHub project with badges, visual separators, icons, a compact architecture diagram, and a clean technology section.
-
-Here is the **copy-paste-ready version**:
-
-````md
 # 🎲 ProbQuest
 
 ### 🥽 An Immersive WebXR Probability Adventure
@@ -18,9 +13,8 @@ Here is the **copy-paste-ready version**:
   <img src="https://img.shields.io/badge/IWSDK-0.5.3-blue?style=for-the-badge" alt="IWSDK">
   <img src="https://img.shields.io/badge/Three.js-3D-black?style=for-the-badge&logo=three.js" alt="Three.js">
   <img src="https://img.shields.io/badge/TypeScript-Logic-blue?style=for-the-badge&logo=typescript" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Vite-Building-purple?style=for-the-badge&logo=vite" alt="Vite">
+  <img src="https://img.shields.io/badge/Vite-Build-purple?style=for-the-badge&logo=vite" alt="Vite">
   <img src="https://img.shields.io/badge/Blender-3D%20Assets-orange?style=for-the-badge&logo=blender" alt="Blender">
-
 </p>
 
 ---
@@ -31,7 +25,7 @@ Here is the **copy-paste-ready version**:
 
 Instead of working with probability only through textbook questions, players interact with virtual objects such as **coins, dice, coloured balls, and playing cards**, observe outcomes, understand the underlying concept, and then solve related probability problems.
 
-The core experience follows:
+### Core Experience
 
 > **Learn → Experiment → Practice → Solve → Reward**
 
@@ -41,21 +35,19 @@ The core experience follows:
 
 ProbQuest combines:
 
-🧮 Mathematics  
-🥽 Virtual Reality / XR  
-🎮 Game-based Learning  
-🧩 Interactive Experiments  
-🏆 Gamification
+- 🧮 Mathematics
+- 🥽 Virtual Reality / XR
+- 🎮 Game-based Learning
+- 🧩 Interactive Experiments
+- 🏆 Gamification
 
 into one immersive learning experience.
 
 Each area focuses on a specific probability concept and uses a corresponding physical interaction to connect mathematical reasoning with an actual experiment.
 
-The game is designed specifically around the:
+The game is designed specifically around:
 
 > **10th Standard Mathematics – Probability**
-
-syllabus.
 
 ---
 
@@ -74,7 +66,7 @@ To progress through the world, the player explores different probability-based e
                     🔐 FINAL PROBABILITY GATE
                                 │
                                 ▼
-                     ⚔️ CHALLENGE ZONE
+                      ⚔️ CHALLENGE ZONE
                                 │
               ┌─────────────────┴─────────────────┐
               │                                   │
@@ -90,7 +82,6 @@ To progress through the world, the player explores different probability-based e
                                 ▼
                          🚪 START / HUB
 ```
-````
 
 ---
 
@@ -141,10 +132,10 @@ The player physically interacts with the corresponding object and observes an ou
 
 Examples:
 
-- Toss a coin
-- Roll a die
-- Pick a ball
-- Draw a card
+- 🪙 Toss a coin
+- 🎲 Roll a die
+- 🔴 Pick a ball
+- 🃏 Draw a card
 
 ### ✏️ Practice
 
@@ -188,8 +179,6 @@ The objective is to make the player **physically perform the experiment** before
 
 # 🛠️ Technology Stack
 
-<p align="center">
-
 | Technology          | Purpose                                 |
 | ------------------- | --------------------------------------- |
 | 🥽 **WebXR**        | Browser-based immersive XR              |
@@ -200,8 +189,6 @@ The objective is to make the player **physically perform the experiment** before
 | 🧊 **Blender**      | 3D environment & asset creation         |
 | 📦 **GLB / GLTF**   | 3D asset format                         |
 | 🐙 **Git & GitHub** | Version control & collaboration         |
-
-</p>
 
 ---
 
@@ -225,31 +212,31 @@ The high-level architecture of ProbQuest is:
                 │                 │
                 └────────┬────────┘
                          ▼
-                  Browser / VR
+                   Browser / VR
                          │
                          ▼
-                    🥽 Player
+                     🥽 Player
 ```
 
 ### 🎨 Asset Pipeline
 
 ```text
 🧊 Blender
-     │
-     ▼
-  GLB / GLTF
-     │
-     ▼
-  IWSDK Asset System
-     │
-     ▼
-   Three.js
-     │
-     ▼
-    WebXR
-     │
-     ▼
-  🥽 VR Headset
+    │
+    ▼
+ GLB / GLTF
+    │
+    ▼
+ IWSDK Asset System
+    │
+    ▼
+ Three.js
+    │
+    ▼
+  WebXR
+    │
+    ▼
+ 🥽 VR Headset
 ```
 
 ---
@@ -336,7 +323,7 @@ The project uses modular 3D assets so environments and individual interactive ob
 
 The repository contains the WebXR application, IWSDK configuration, source code, scenes, assets, and project documentation required to develop and run ProbQuest.
 
-Main project areas include:
+### Main Project Areas
 
 ```text
 src/          → Application and gameplay logic
@@ -361,14 +348,14 @@ For physical VR testing, the computer and headset must be able to access the sam
 Developer Computer
         │
         ▼
-     Vite Server
+    Vite Server
         │
         ▼
-   HTTPS WebXR App
+  HTTPS WebXR App
         │
-   ┌────┴────┐
-   ▼         ▼
-Browser    VR Headset
+    ┌───┴────┐
+    ▼        ▼
+ Browser   VR Headset
 ```
 
 ---
@@ -429,10 +416,3 @@ The repository serves as the central development space for the ProbQuest applica
 ## 💡 ProbQuest
 
 ### **Experience Probability. Master the Quest. 🎲🥽**
-
-```
-
-One thing I'd especially keep is the **technology badge row** at the top. It immediately tells anyone opening the repository, *“This is a WebXR + IWSDK + Three.js + TypeScript project,”* without making them read the whole README.
-
-Also, I deliberately **didn't add a fake “build status”, “license”, “contributors”, “deployment”, or future roadmap section**—those can make an early academic repository look artificially complete.
-```
